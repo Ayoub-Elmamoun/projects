@@ -1,0 +1,54 @@
+body{
+    margin: 0px;
+}
+header nav ul  {
+    display: flex;
+    list-style: none;
+}
+header nav ul li{
+    flex : 0 0 100px;
+    background-color: red;
+    color : white;
+    margin: 0px 4px;
+    padding: 3px;
+    text-align: center;
+
+}
+main h1{
+    color: red;
+}
+aside {
+    background-color:yellow;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 0.25rem;
+}
+body{
+    margin: 0px;
+}
+header nav ul  {
+    display: flex;
+    list-style: none;
+}
+header nav ul li{
+    flex : 0 0 100px;
+    background-color: red;
+    color : white;
+    margin: 0px 4px;
+    padding: 3px;
+    text-align: center;
+
+}
+main h1{
+    color: blue;
+}
+aside {
+    background-color:yellow;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 0.25rem;
+}

@@ -1,0 +1,46 @@
+@media only screen and (max-width: 800px) {
+
+    .image-flexitem {
+
+        display: none;
+    }
+    .navlist {
+        
+        display: none;
+    }
+
+
+    .subscribe-container form #bt {
+
+        margin-top: 30px;
+    }
+
+        .image-container {
+
+            text-align: center;
+
+
+        }
+    .button-container {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+
+    .navlist {
+        
+        display: none;
+}
+
+.image-container {
+
+    text-align: center;
+
+
+}
+.button-container {
+text-align: center;
+}
+
+}

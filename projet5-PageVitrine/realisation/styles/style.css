@@ -104,24 +104,3 @@ footer .services .service p{
 footer #contact{
     color: rgb(181, 181, 181);
 }
-
-@media screen and (max-width:680px){
-    nav .onglets {
-        margin-left: 0px;
-        margin-bottom: 20px;
-    }
-    .main .card {
-        margin: 10px;
-    }
-    .main .content .card .right img{
-        height:200px;
-        width: 100%;
-        margin-top: -0px;
-    }
-    .main .content .card{
-        display: block;
-    }
-    footer{
-        padding: 30px;
-    }
-}

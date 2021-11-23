@@ -76,7 +76,7 @@ header h4{
     width: 400px;
     margin-top: 5px;
 }
-
+                   
 footer{
     margin-top: 40px;
     border-top: 5px solid #6f6f6f;
@@ -104,3 +104,4 @@ footer .services .service p{
 footer #contact{
     color: rgb(181, 181, 181);
 }
+ 

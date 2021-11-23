@@ -1,4 +1,3 @@
 ##presentation :
 #figma :
 
-#slide :

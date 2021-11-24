@@ -15,11 +15,7 @@ nav{
     align-items: center;
     border-bottom: 5px solid #6f6f6f;
 }
-nav h1{
-    color: #717171;
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-}
+
 nav .onglets{
     margin-top: 3px;
     margin-left: 300px;

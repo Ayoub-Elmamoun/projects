@@ -6,11 +6,17 @@ var number = Math.floor(Math.random() * 100)
 
     
     var input = document.getElementById('guess').value;
+
     if (input == number){
+
         message = "Bravo est vrai il est " + number;
+
     } else if (input > number ) {
+
         message= "Essayer un petit nombre !"
+
     } else if (input < number ) {
+        
         message= "Essayer un grand nombre !"
     }
     output.innerHTML = message

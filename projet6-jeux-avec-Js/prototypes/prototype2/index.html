@@ -4,7 +4,6 @@
       <meta charset="UTF-8" />
       <title> Deviner un nombre </title>
       <link rel="stylesheet" href="style.css">
-      <script type="text/javascript" src="prototype2.js"></script>
     </head>
     <body>
       <div id="father">
@@ -12,12 +11,13 @@
         <div id="container">
   
           <h1>Deviner le nombre!</h1>
-          <p>je pense d'un nombre entre 1 et 100 . Pouvez-vous le deviner?</p>
-       
+          <p id="text">je pense d'un nombre entre 1 et 100 . Pouvez-vous le deviner?</p>
+          <p id="output"></p>
           <input type="number" id="guess">
-          <input type="submit" id="submitGuess" value="validé ">
+          <button onclick=submit() id="submitGuess">Validé</button>
     
         </div>
       </div>
     </body>
+    <script type="text/javascript" src="prototype2.js"></script>
   </html>

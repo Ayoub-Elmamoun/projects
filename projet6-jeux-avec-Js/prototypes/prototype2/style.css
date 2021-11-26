@@ -15,12 +15,16 @@ body {
     width: 750px;
     text-align: center;
 }
-input {
-    margin-top: 40px;
+
+#text , #output{
+    font-size: 20px;
 }
 
-p {
-    font-size: 20px;
+input {
+    margin-top: 10px;
+}
+
+#output {  
     color: white;
     margin-top: 40px;
 }

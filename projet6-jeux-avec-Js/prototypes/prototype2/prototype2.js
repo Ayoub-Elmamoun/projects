@@ -9,7 +9,7 @@ var number = Math.floor(Math.random() * 100)
 
     if (input == number){
 
-        message = "Bravo est vrai il est " + number;
+        message = "Bravo !! il est " + number;
 
     } else if (input > number ) {
 

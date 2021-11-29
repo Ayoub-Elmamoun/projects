@@ -1,5 +1,6 @@
 var guess = document.getElementById("submitGuess")
 var output = document.getElementById("output")
+var max=100
 var message;
 var number = Math.floor(Math.random() * 100)
  function submit() {
@@ -9,7 +10,7 @@ var number = Math.floor(Math.random() * 100)
 
     if (input == number){
 
-        message = "C'est raté !!!" 
+        message = "Bravo !! il est " + number;
 
     } else if (input > number ) {
 
@@ -18,6 +19,8 @@ var number = Math.floor(Math.random() * 100)
     } else if (input < number ) {
         
         message= "Essayer un grand nombre !"
+    } else if (input > max) {
+        message="out of range bro !"
     }
     output.innerHTML = message
 }

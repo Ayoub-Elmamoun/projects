@@ -7,12 +7,23 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="father">
+
+        <div id="container">
+  
+          <h1>Deviner le nombre!</h1>
+          <p id="text">je pense d'un nombre entre 1 et 100 . Pouvez-vous le deviner?</p>
+          <p id="output"></p>
+          <input type="number" id="guess">
+          <button onclick=submit() id="submitGuess">Validé</button>
+    
+    </div>
+    
     <script>
-        //declaration des variables 
+        // variables declaration 
 
         var guess = document.getElementById("submitGuess")
-        var output = document.getElementById("output")
-        var message;
+        var message = document.getElementById("output")
         var number = Math.floor(Math.random() * 100)
         function submit() {
 
@@ -40,5 +51,6 @@
 
 
     </script>
+
 </body>
 </html>

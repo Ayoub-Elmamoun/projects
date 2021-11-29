@@ -21,4 +21,3 @@ var number = Math.floor(Math.random() * 100)
     }
     output.innerHTML = message
 }
-

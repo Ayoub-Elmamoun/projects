@@ -1,1 +1,38 @@
-.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var guess = document.getElementById("submitGuess")
+        var output = document.getElementById("output")
+        var message;
+        var number = Math.floor(Math.random() * 100)
+        function submit() {
+
+            
+            var input = document.getElementById('guess').value;
+
+            if (input == number){
+
+                message = "Bravo est vrai il est " + number;
+
+            } else if (input > number ) {
+
+                message= "Essayer un petit nombre !"
+
+            } else if (input < number ) {
+                
+                message= "Essayer un grand nombre !"
+            }
+            output.innerHTML = message
+        }
+
+
+    </script>
+</body>
+</html>

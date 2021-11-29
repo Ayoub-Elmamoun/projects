@@ -2,7 +2,7 @@ var guess = document.getElementById("submitGuess")
 var output = document.getElementById("output")
 var tentatives = 10;
 var message;
-var number = Math.floor(Math.random() * 4)
+var number = Math.floor(Math.random() * 100)
  function submit() {
 
     tentatives--;

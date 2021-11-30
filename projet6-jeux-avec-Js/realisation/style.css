@@ -42,5 +42,4 @@ button {
 button:hover {
     color: white;
     background-color: tomato;
-    border:1px solid black;
 }

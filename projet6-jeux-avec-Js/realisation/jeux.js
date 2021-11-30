@@ -1,8 +1,12 @@
+// DECLARATION DES VARIABLES 
+
 var guess = document.getElementById("submitGuess")
-var output = document.getElementById("output")
+var message = document.getElementById("output")
 var tentatives = 10;
-var message;
 var number = Math.floor(Math.random() * 100)
+
+// TRAITEMENT  
+
  function submit() {
 
     tentatives--;
@@ -28,5 +32,8 @@ var number = Math.floor(Math.random() * 100)
     } else {
          message="c'est raté"
      }
+
+// AFFICHAGE
+
     output.innerHTML=message
 }

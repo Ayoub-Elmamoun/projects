@@ -18,7 +18,7 @@ var input = document.getElementById('guess').value;
             if (tentatives >= 8) {
                 message="Bravo, vous etes un Génie !!!"
 
-            }   else {
+            }  else {
                     message = "Félicitations, vous avez gagné après " +tentativeNumber+ " tentatives";
                 }
         } 

@@ -2,8 +2,9 @@
 
 var submitguess = document.getElementById("submitGuess")
 var output = document.getElementById("output")
+var attemptNum = document.getElementById("attemptNum")
 var display;
-var attempts = 0;
+var attemptRes = 10;
 var randomNumber = Math.floor(Math.random() * 100)
 
 // TRAITEMENT  
@@ -11,17 +12,17 @@ var randomNumber = Math.floor(Math.random() * 100)
  function submit() {
     var guess = document.getElementById('guess').value;
 
-    attempts++;
-    if (attempts < 10) {
-    
-        if (guess == randomNumber && attempts <= 2){
+    attemptRes--;
+    if (attemptRes > 0) {
+        attemptNum.innerHTML= "Tentatives : "+attemptRes
+        if (guess == randomNumber && attemptRes >= 8){
 
                 display="Bravo, vous etes un Génie !!!"
                 
          }
          else if (guess == randomNumber) {
 
-                display = "Félicitations, vous avez gagné après " +attempts+ " tentatives";
+                display = "Félicitations, vous avez gagné après " +(10 - attemptRes)+ " tentatives";
 
             }
 
@@ -35,6 +36,7 @@ var randomNumber = Math.floor(Math.random() * 100)
 
     } else {
          display="c'est raté"
+         attemptNum.innerHTML=""
      }
 
 // AFFICHAGE

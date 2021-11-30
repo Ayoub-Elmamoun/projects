@@ -1,41 +1,43 @@
 // DECLARATION DES VARIABLES 
 
-var guess = document.getElementById("submitGuess")
-var message = document.getElementById("output")
-var tentatives = 10;
-var tentativeNumber = 10 - tentatives;
-var number = Math.floor(Math.random() * 100)
-var input = document.getElementById('guess').value;
+var submitguess = document.getElementById("submitGuess")
+var output = document.getElementById("output")
+var display;
+var attempts = 0;
+var randomNumber = Math.floor(Math.random() * 100)
 
 // TRAITEMENT  
 
  function submit() {
+    var guess = document.getElementById('guess').value;
 
-    tentatives--;
-    if (tentatives > 0) {
+    attempts++;
+    if (attempts < 10) {
     
-        if (input == number){
-            if (tentatives >= 8) {
-                message="Bravo, vous etes un Génie !!!"
+        if (guess == randomNumber && attempts <= 2){
 
-            }  else {
-                    message = "Félicitations, vous avez gagné après " +tentativeNumber+ " tentatives";
-                }
+                display="Bravo, vous etes un Génie !!!"
+                
+         }
+         else if (guess == randomNumber) {
+
+                display = "Félicitations, vous avez gagné après " +attempts+ " tentatives";
+
+            }
+
+        else if (guess > randomNumber ) {
+            display= "Essayer un petit nombre !"
+
         } 
-        
-        else if (input > number ) {
-            message= "Essayer un petit nombre !"
-
-        } 
-
         else  {
-            message= "Essayer un grand nombre !"
+            display= "Essayer un grand nombre !"
         }
+
     } else {
-         message="c'est raté"
+         display="c'est raté"
      }
 
 // AFFICHAGE
 
-    output.innerHTML=message
+    output.innerHTML=display
 }

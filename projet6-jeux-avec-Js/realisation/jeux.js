@@ -3,6 +3,7 @@
 var guess = document.getElementById("submitGuess")
 var message = document.getElementById("output")
 var tentatives = 10;
+var tentativeNumber = 10 - tentatives;
 var number = Math.floor(Math.random() * 100)
 var input = document.getElementById('guess').value;
 
@@ -18,7 +19,7 @@ var input = document.getElementById('guess').value;
                 message="Bravo, vous etes un Génie !!!"
 
             }   else {
-                    message = "Félicitations, vous avez gagné après " +(10-tentatives)+ " tentatives";
+                    message = "Félicitations, vous avez gagné après " +tentativeNumber+ " tentatives";
                 }
         } 
         
